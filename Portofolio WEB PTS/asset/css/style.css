@@ -1,0 +1,505 @@
+@import url('https://fonts.gogleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* css dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css untuk mengatur warna yang sering digunakan */
+:root {
+    --bg-color: black;
+    --second-bg-color: black;
+    --text-color: white;
+    --main-color: red;
+}
+
+/* css untuk mengatur  */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* css untuk mengatur bagian body */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* css untuk mengatur bagian section */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* css untuk mengatur bagian header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* css untuk mengatur logo */
+.logo {
+    font-size: 3.5rem;
+    color: var(--text-color);
+    font-weight:700;
+    cursor: default;
+    color:red;
+}
+
+/* css untuk mengatur navbar */
+.navbar a {
+    font-size: 2.6rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+/* css untuk mengatur menu icon */
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+/* css untuk mengatur home  */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* css untuk mengatur img di home */
+.home-img img {
+    width: 35vw;
+}
+
+/* css untuk mengatur h3 di home */
+.home-content h3 { 
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+/* css untuk mengatur span */
+span {
+    color:var(--main-color)
+}
+
+/* css untuk mengatur h1 di home */
+.home-content h1 { 
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* css untuk mengatur p di home*/
+.home-content p {
+    font-size: 1.6rem;
+}
+
+/* css untuk mengatur bagian social media */
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2rem solid var(---main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(---main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* css untuk mengatur btn */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    margin: 2rem 0 3rem;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+/* css untuk mengatur bagian baout */
+.about {
+    background: var(--second-bg-color);
+}
+
+.about .about-content {
+    margin-top: -20px;
+}
+
+/* css untuk mengatur bagian h3 di about */
+.about .about-content h3 {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+/* css untuk mengatur bagian exp-area p */
+.about .about-content .exp-area .expp p {
+    font-size: 18px;
+    margin-bottom: 100px;
+}
+
+.about .about-content p {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+/* css untuk mengatur bagian img di about */
+#about .container .row .col-md-6 .about-img img {
+    max-width: 330px;
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+}
+
+/* css untuk mengatur bagian heading */
+#about .container .row .col-md-6 .about-content .heading {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+/* css untuk mengatur center-text2 */
+.center-text2{
+    text-align: center;
+}
+
+/* css untuk mengatur h2 */
+.center-text2 h2{
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+/* css untuk mengatur h4 */
+.center-text2 h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+/* css untuk mengatur bagian portofolio */
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+}
+
+/* css untuk mengatur img */
+.row img{
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+}
+
+/* css untuk mengatur row */
+.row{
+    background: var(--secont-bg-color);
+    border-radius: 28px;
+    border: 1px solid transparent;
+    padding: 20px;
+    transition: all .50s ease;
+}
+
+/* css untuk mengatur main-row */
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+/* css untuk mengatur h5 */
+.row h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--other-color);
+}
+
+/* css untuk mengatur i */
+.row i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+    border-radius: 50%;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+/* css untuk mengatur h4 */
+.row h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* css untuk mengatur row */
+.row:hover{
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
+}
+
+/* css untuk mengatur skill  */
+.skill h2 {
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.skill-container .skill-box {
+    flex: 1 1 3rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 2rem solid var(--bg-color);
+    transition: 5s ease;
+}
+
+.skill-container .skill-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+/* css untuk mengatur box i */
+.skill-box i {
+    font-size: 4rem;
+    color: var(--main-color);
+}
+
+/* css untuk mengatur h3 */
+.skill-box h3 {
+    font-size: 2.8rem;
+}
+
+/* css untuk mengatur p */
+.skill-box p {
+    font-size: 2rem;
+}
+/* css untuk mengatur bagian portofolio */
+.portofolio {
+    background: var(--second-bg-color);
+}
+
+/* css untuk mengatur h2 */
+.portofolio h2 {
+    margin-bottom: 4rem;
+}
+
+/* css untuk mengatur container */
+.portofolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* css untuk mengatur portofolio box */
+.portofolio-container .portofolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 5rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+/* css untuk mengatur img */
+.portofolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+.portofolio-box:hover img {
+    transform: scale(1.1);
+}
+
+/* css untuk mengatur portofolio */
+.portofolio-box .portofolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(---main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portofolio-box:hover .portofolio-layer {
+    transform: translateY();
+}
+
+.portofolio .center-text2 h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: red;
+}
+
+/* css untuk mengatur h4 */
+.portofolio-layer h4 {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portofolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portofolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+/* css untuk mnengatur bagian contact */
+.contact {
+    background: var(--second-bg-color);
+  }
+  
+  /* css untuk mengatur h2 */
+  .contact h2 {
+    margin-bottom: 3rem;
+  }
+  .contact from {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  /* css untuk mengatur input-box */
+  .contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact form .input-box input,
+  .contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 4rem;
+    margin: 0.5rem 0;
+  }
+  
+  .contact form .input-box input {
+    width: 49%;
+  }
+  
+  .contact form textarea {
+    resize: none;
+  }
+  
+  .contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+ 
+  /* css untuk mengatur footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--second-bg-color);
+    padding-top: 30px;
+    padding-bottom: 12px;
+}
+
+/* css untuk mengatur p */
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+/* css untuk mengatur a */
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(---main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+   box-shadow: 0 0 1rem var(--main-color);
+}
+
+/* css untuk mengatur a i  */
+.footer-iconTop  a i {
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
